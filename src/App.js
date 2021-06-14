@@ -1,4 +1,6 @@
+import { react } from '@babel/types';
 import Expenses from './components/Expenses';
+import React from 'react';
 
 function App() {
   const expenses = [
@@ -19,6 +21,7 @@ function App() {
     }
   ]
   return (
+    // React.createElement("div",{},React.createElement(Expenses,{expenses : expenses})));
     <div>
       <Expenses expenses = {expenses} />
     </div>
