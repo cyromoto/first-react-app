@@ -2,7 +2,7 @@ import { react } from '@babel/types';
 import Expenses from './components/Expenses/Expenses';
 import React from 'react';
 
-function App() {
+const App = () => {
   const expenses = [
     {
       title: "Purchased POCO M3",
