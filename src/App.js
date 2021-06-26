@@ -3,7 +3,7 @@ import Expenses from './components/Expenses/Expenses';
 import React from 'react';
 
 const App = () => {
-  const expenses = [
+  const data = [
     {
       title: "Purchased POCO M3",
       amount: 11250,
@@ -23,7 +23,7 @@ const App = () => {
   return (
     // React.createElement("div",{},React.createElement(Expenses,{expenses : expenses})));
     <div>
-      <Expenses expenses = {expenses} />
+      <Expenses expenses = {data} />
     </div>
   );
 }
