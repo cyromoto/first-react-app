@@ -1,6 +1,7 @@
-import { react } from '@babel/types';
+// import { react } from '@babel/types';
 import Expenses from './components/Expenses/Expenses';
-import React from 'react';
+import NewExpense from './components/NewExpenses/NewExpense';
+// import React from 'react';
 
 const App = () => {
   const data = [
@@ -20,9 +21,15 @@ const App = () => {
       date: new Date(2020,1,2)
     }
   ]
+
+  const  addExpenseItem = ( expenseData ) => {
+    console.log("In App.js");
+    console.log(expenseData);
+  }
   return (
     // React.createElement("div",{},React.createElement(Expenses,{expenses : expenses})));
     <div>
+      < NewExpense onAddExpense = { addExpenseItem } />
       <Expenses expenses = {data} />
     </div>
   );
